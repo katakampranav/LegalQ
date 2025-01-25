@@ -112,4 +112,8 @@ This LegalQ application was developed by :
 -	[@katakampranav](https://github.com/katakampranav)
 -	Repository : https://github.com/katakampranav/LegalQ
 
+## Feedback
+
+For any feedback or queries, please reach out to me at katakampranavshankar@gmail.com.
+
 ---
