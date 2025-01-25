@@ -18,9 +18,9 @@ The application consists of two main functionalities:
 ### Components and Libraries Used:
 
 - **Streamlit**: Used for creating the user interface.
-- **FAISS**: A vector database to store and search for relevant legal data (both from `.csv` and `.pdf` files) using similarity search.
-- **Hugging Face Embeddings**: For converting the legal dataset into embeddings.
-- **Together AI**: For integrating **LLAMA 3.3**, an LLM that processes user queries and returns answers based on context.
+- **FAISS**: A vector database to store the given data(both from `.csv` and `.pdf` files) in the form of embeddings and search for relevant legal data using similarity search while generating output.
+- **Hugging Face Embeddings**: For converting the legal datasets into embeddings.
+- **Together AI**: For integrating [**LLAMA 3.3**](https://api.together.xyz/models/meta-llama/Llama-3.3-70B-Instruct-Turbo-Free), an LLM that processes user queries and returns answers based on context.
 - **Langchain**: Used for various utilities such as document loaders, text splitting, and vector stores.
 - **dotenv**: For securely loading API tokens from environment files.
 
@@ -63,6 +63,7 @@ The application consists of two main functionalities:
 - Streamlit
 - Hugging Face Embeddings
 - FAISS
+- Langchain
 
 ### Setup
 1. Clone the repository:
@@ -75,7 +76,12 @@ The application consists of two main functionalities:
    pip install -r requirements.txt
    ```
 
-3. Create a `.env` file to store your **API token** (from Together AI):
+3. Go to Model_Development Directory:
+   ```bash
+   cd Model_Development
+   ```
+
+5. Create a `.env` file to store your **API token** (from Together AI):
    ```plaintext
    API_TOKEN=your_api_token_here
    ```
@@ -88,10 +94,18 @@ The application consists of two main functionalities:
 2. Access the app through your browser, where you can interact with the **Need Info** or **Know Law** functionality.
 
 ## Example Usage
-
+- **Home Page**:
+  ![Image](https://github.com/user-attachments/assets/ad17ada9-5880-45c8-85a6-93420a0f40bb)
 - **Need Info**: Select an offense and its relevant legal section from dropdowns to get detailed legal information.
-- **Know Law**: Enter a query (e.g., "A person stabbed B in self-defense"), and the system will generate a detailed response with the relevant legal sections, offense, punishment, and explanation.
+  ![Image](https://github.com/user-attachments/assets/25a29832-589d-4c11-9010-7c21aca1b5a8)
 
+  ![Image](https://github.com/user-attachments/assets/74a50f08-8c57-4567-b910-a29d597772fc)
+  ![Image](https://github.com/user-attachments/assets/f369a523-88f3-418f-9d79-ddf73756d27e)
+- **Know Law**: Enter a query (e.g., "A person stabbed B in self-defense"), and the system will generate a detailed response with the relevant legal sections, offense, punishment, and explanation.
+  ![Image](https://github.com/user-attachments/assets/5b14f9f7-292e-4845-845c-e27560d39b38)
+
+  ![Image](https://github.com/user-attachments/assets/1dbcf61c-a80c-4075-a5ce-8ed7559f0c67)
+  
 ## Author
 
 This LegalQ application was developed by :
