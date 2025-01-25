@@ -83,7 +83,7 @@ The application consists of two main functionalities:
 
 5. Create a `.env` file to store your **API token** (from Together AI):
    ```plaintext
-   API_TOKEN=your_api_token_here
+   TOGETHER_AI=your_api_token_here
    ```
 
 ### Running the Application
