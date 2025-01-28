@@ -8,13 +8,10 @@ import streamlit as st
 import time
 import streamlit_lottie as st_lottie  # For Lottie file integration
 
-# Streamlit Page Configuration
-# st.set_page_config(page_title="Legal Offense Query System", layout="wide")
-
 def render_page():
 
     # Load environment variables
-    load_dotenv()
+    load_dotenv(dotenv_path='Model_Development/.env')
     TOGETHER_AI_API = os.getenv("TOGETHER_AI")
 
     # Initialize Together API client
