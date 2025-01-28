@@ -9,7 +9,7 @@ st.set_page_config(
     page_title="LegalQ",
     layout="wide",
     initial_sidebar_state="collapsed",
-    page_icon="assets/emblem_of_india.png"
+    page_icon="Model_Development/assets/emblem_of_india.png"
 )
 
 # Sidebar or horizontal menu for navigation
