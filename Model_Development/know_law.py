@@ -72,7 +72,7 @@ def render_page():
 
 
     # Load environment variables
-    load_dotenv()
+    load_dotenv('Model_Development/.env')
     TOGETHER_AI_API = os.getenv("TOGETHER_AI")
 
     # Initialize Together API client
