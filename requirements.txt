@@ -11,6 +11,6 @@ pandas
 spacy
 nltk
 fuzzywuzzy
-pydantic
+pydantic==1.9.1
 sentence_transformers
 einops
