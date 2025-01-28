@@ -1,5 +1,6 @@
 streamlit
 streamlit_lottie
+streamlit_option_menu
 langchain
 langchain_community
 python-dotenv==0.19.2
