@@ -36,7 +36,7 @@ def render_page():
 
     # Add the image to the first column with padding
     with col2:
-        st.image("assets/emblem of india.png", use_container_width=False, width=350)  # Adjust width as necessary
+        st.image("assets/emblem_of_india.png", use_container_width=False, width=350)  # Adjust width as necessary
 
     # Add the title and description to the third column
     with col3:
