@@ -13,3 +13,4 @@ nltk
 fuzzywuzzy
 pydantic
 sentence_transformers
+einops
