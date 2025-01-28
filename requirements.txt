@@ -8,5 +8,6 @@ huggingface_hub==0.15.1
 faiss-cpu==1.7.4
 pandas==1.5.3
 spacy==3.5.0
+thinc==8.1.7
 nltk==3.7
 fuzzywuzzy==0.18.0
