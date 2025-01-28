@@ -3,7 +3,7 @@ streamlit_lottie
 streamlit_option_menu
 langchain
 langchain_community
-python-dotenv==0.19.2
+python-dotenv
 together
 huggingface_hub
 faiss-cpu
@@ -11,6 +11,6 @@ pandas
 spacy
 nltk
 fuzzywuzzy
-pydantic==1.9.1
+pydantic
 sentence_transformers
 einops

@@ -12,7 +12,7 @@ import streamlit_lottie as st_lottie  # For Lottie file integration
 def render_page():
 
     # Load environment variables
-    load_dotenv('Model_Development/.env')
+    load_dotenv()
     TOGETHER_AI_API = os.getenv("TOGETHER_AI")
 
     # Initialize Together API client
