@@ -213,7 +213,7 @@ def render_page():
         model_name="nomic-ai/nomic-embed-text-v1",
         model_kwargs={"trust_remote_code": True, "revision": "289f532e14dbbbd5a04753fa58739e9ba766f3c7"}
     )
-    db = FAISS.load_local("Model_Development/ipc_vector_db", embeddings, allow_dangerous_deserialization=True)
+    db = FAISS.load_local("ipc_vector_db", embeddings, allow_dangerous_deserialization=True)
     db_retriever = db.as_retriever(search_type="similarity", search_kwargs={"k": 4})
 
     # Prompt Template
@@ -261,7 +261,7 @@ def render_page():
     col1, col2 = st.columns([1, 2])
 
     # Sidebar with Lottie animation
-    lottie_animation = load_lottie_file("Model_Development/assets/lottie.json")  # Replace with the actual Lottie file path
+    lottie_animation = load_lottie_file("assets/lottie.json")  # Replace with the actual Lottie file path
     with col1:
         st.markdown('<div class="center">', unsafe_allow_html=True)
         st_lottie.st_lottie(lottie_animation, speed=1, width=350, height=250, key="lottie")
