@@ -56,6 +56,9 @@ The application consists of two main functionalities:
 - **Hugging Face Embeddings**: For generating text embeddings.
 - **Pandas**: For handling and manipulating data.
 
+## Workflow
+![Image](https://github.com/user-attachments/assets/0b201efc-693b-4d71-96c8-7e7338d1eced)
+
 ## Installation
 
 ### Prerequisites
