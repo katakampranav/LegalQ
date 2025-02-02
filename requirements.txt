@@ -6,7 +6,7 @@ langchain_community
 python-dotenv
 together
 huggingface_hub
-faiss-cpu --no-cache-dir
+faiss-cpu
 pandas
 spacy
 nltk
