@@ -7,7 +7,6 @@ import os
 import streamlit as st
 import time
 import streamlit_lottie as st_lottie  # For Lottie file integration
-import warnings
 
 def render_page():
 
@@ -195,8 +194,6 @@ def render_page():
         "fraudulent representation": "Section 420",
         "cultural vandalism": "Section 295"
     }
-
-    warnings.filterwarnings("ignore", category=DeprecationWarning)
 
     Offenses, Sections = zip(*offense_section_mapping.items())
     Offenses = list(Offenses)

@@ -7,7 +7,6 @@ import os
 import streamlit as st
 import time
 import streamlit_lottie as st_lottie 
-import warnings
 
 # # Streamlit Page Configuration
 # st.set_page_config(page_title="Legal Offense Query System", layout="wide")
@@ -54,7 +53,6 @@ def render_page():
         unsafe_allow_html=True
     )
 
-    warnings.filterwarnings("ignore", category=DeprecationWarning)
 
     # Function to load Lottie animation
     @st.cache_data
