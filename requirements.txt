@@ -6,7 +6,7 @@ langchain_community
 python-dotenv
 together
 huggingface_hub
-faiss-cpu==1.7.4
+faiss-cpu
 pandas
 spacy
 nltk
