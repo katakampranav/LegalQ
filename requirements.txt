@@ -18,3 +18,4 @@ einops
 torch==2.2.0  # Change from 2.1.2 to 2.2.0 for Python 3.12 compatibility
 torchvision==0.17.0
 torchaudio==2.2.0
+numpy
