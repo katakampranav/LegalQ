@@ -3,6 +3,7 @@ streamlit_lottie
 streamlit_option_menu
 langchain
 langchain_community
+langchain-huggingface
 python-dotenv
 together
 huggingface_hub
@@ -12,5 +13,5 @@ spacy
 nltk
 fuzzywuzzy
 pydantic
-sentence_transformers
+sentence-transformers
 einops
