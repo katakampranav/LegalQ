@@ -6,11 +6,12 @@ langchain_community
 python-dotenv
 together
 huggingface_hub
-faiss-cpu
+faiss-cpu --no-cache-dir
 pandas
 spacy
 nltk
 fuzzywuzzy
 pydantic
-sentence_transformers
+sentence-transformers --no-deps
 einops
+torch==none
