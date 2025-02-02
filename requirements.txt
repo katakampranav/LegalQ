@@ -12,5 +12,6 @@ spacy
 nltk
 fuzzywuzzy
 pydantic
-sentence_transformers
-einops
+# sentence_transformers
+# einops
+pytorch
