@@ -6,12 +6,12 @@ langchain_community
 python-dotenv
 together
 huggingface_hub
-faiss-cpu
+faiss-cpu==1.7.4
 pandas
 spacy
 nltk
 fuzzywuzzy
 pydantic
-sentence-transformers
+sentence-transformers==2.2.2
 einops
 torch==none
