@@ -12,6 +12,6 @@ spacy
 nltk
 fuzzywuzzy
 pydantic
-sentence-transformers --no-deps
+sentence-transformers
 einops
 torch==none
