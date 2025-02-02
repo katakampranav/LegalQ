@@ -12,5 +12,5 @@ spacy
 nltk
 fuzzywuzzy
 pydantic
-sentence-transformers==2.2.2
+sentence-transformers
 einops
