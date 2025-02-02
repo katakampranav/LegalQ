@@ -14,4 +14,3 @@ fuzzywuzzy
 pydantic
 sentence-transformers==2.2.2
 einops
-torch==none
