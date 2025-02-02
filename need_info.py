@@ -1,5 +1,5 @@
 from langchain_community.vectorstores import FAISS
-from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain.prompts import PromptTemplate
 from dotenv import load_dotenv
 from together import Together
@@ -7,7 +7,7 @@ import os
 import streamlit as st
 import time
 import streamlit_lottie as st_lottie  # For Lottie file integration
-
+import warnings
 
 def render_page():
 
@@ -196,6 +196,7 @@ def render_page():
         "cultural vandalism": "Section 295"
     }
 
+    warnings.filterwarnings("ignore", category=DeprecationWarning)
 
     Offenses, Sections = zip(*offense_section_mapping.items())
     Offenses = list(Offenses)
@@ -292,7 +293,7 @@ def render_page():
                 with st.spinner("Processing..."):
                     try:
                         # Retrieve relevant documents from FAISS
-                        context_docs = db_retriever.get_relevant_documents(query)
+                        context_docs = db_retriever.invoke(query)
                         context = " ".join([doc.page_content for doc in context_docs])
 
                         # Format the prompt with query and context

@@ -1,5 +1,5 @@
 from langchain_community.vectorstores import FAISS
-from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain.prompts import PromptTemplate
 from dotenv import load_dotenv
 from together import Together
@@ -7,6 +7,7 @@ import os
 import streamlit as st
 import time
 import streamlit_lottie as st_lottie 
+import warnings
 
 # # Streamlit Page Configuration
 # st.set_page_config(page_title="Legal Offense Query System", layout="wide")
@@ -52,6 +53,8 @@ def render_page():
         """, 
         unsafe_allow_html=True
     )
+
+    warnings.filterwarnings("ignore", category=DeprecationWarning)
 
     # Function to load Lottie animation
     @st.cache_data
@@ -111,7 +114,7 @@ def render_page():
             with st.spinner("Processing..."):
                 try:
                     # Retrieve relevant documents from FAISS
-                    context_docs = db_retriever.get_relevant_documents(query)
+                    context_docs = db_retriever.invoke(query)
                     context = " ".join([doc.page_content for doc in context_docs])
                     
                     # Format the prompt with query and context
