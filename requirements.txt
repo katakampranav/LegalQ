@@ -14,4 +14,3 @@ fuzzywuzzy
 pydantic
 # sentence_transformers
 # einops
-pytorch
